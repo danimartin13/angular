@@ -32,4 +32,9 @@ addOrEdit(){
   this.selectedEmployee = new Employee()
 }
 
+delete(){
+  this.employeeArray = this.employeeArray.filter(x => x !=this.selectedEmployee);
+  this.selectedEmployee =new Employee();
+}
+
 }
